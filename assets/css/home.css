@@ -1,0 +1,234 @@
+body{
+    margin: 0px;
+    padding: 0;
+    /* background-color: red; */
+    
+}
+.con{
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+}
+header{
+    height: 100px;
+    background-color: rgb(154, 153, 159);
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+}
+header i{
+    margin-left:20px ;
+}
+header p{
+    border: 2px solid white;
+    margin-left:30px;
+    color: white;
+    background-color: rgb(59, 53, 53);
+    height: 30px;
+    width: 70px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .features{
+    display: flex;
+    margin-left: 600px;
+}
+.img-scroller{
+    background-image: url(back.avif);
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+
+.container{
+    position: absolute;
+    
+    top: 400px;
+    left: 750px;
+    height: 400px;
+    width: 700px;
+    display: flex;
+    transform: translate(-50%,-50%);
+    border: 10px solid rgb(130, 106, 106);
+    border-radius: 5px;
+    box-shadow: 0cqmin;
+    overflow: hidden;
+
+    
+}
+.img-container {
+    width: 100%;
+    display: flex;
+    animation: slide 16s infinite ;
+}
+.img-container img{
+    width: 100%;
+    /* height: 100%; */
+    /* border:5px solid white; */
+}
+@keyframes slide {
+    0%{
+        transform:translateX(0);
+    }
+    25%{
+        transform:translateX(-100%);
+    }
+    30%{
+        transform:translateX(-100%);
+    }
+    
+    50%{
+        transform:translateX(-200%);
+    }
+    55%{
+        transform:translateX(-200%);
+    }
+    75%{
+        transform:translateX(-300%);
+    }
+    80%{
+        transform:translateX(-300%);
+    }
+    100%{
+        transform:translateX(-300%);
+    }
+}
+.jobs{
+    height: auto;
+    width: 100%;
+    background-color: rgb(222, 210, 210);
+}
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+}
+.heading h1{
+    margin-left: 1%;
+}
+.domains{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.domains a{
+    color: black;
+}
+.domain-size{
+    height: 300px;
+    width: 300px;
+    background-color: black;
+    border-radius: 5px;
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25px;
+    margin-bottom: 100px;
+}
+.domain-name{
+    border: 5px solid grey;
+    height: 250px;
+    width: 250px;
+    background-color: aquamarine;
+    border-radius: 5px;
+    color: black;
+}
+.domain-size h1{
+    position: absolute;
+    top: 300px;
+}
+.domains .v{
+    padding: 0;
+    margin: 0;
+}
+.domains .d1{
+    background-image: url('restaurant.jpg');
+    background-size: cover;
+    position: absolute;
+}
+.domain-size .domain-name:hover{
+    height: 270px;
+    width: 270px;
+    background-color: red;
+    
+}
+.domain-size:hover{
+    /* background-color: red; */
+}
+.domains .d2{
+    background-image: url('footwear.avif');
+    background-size: cover;
+
+}
+.domains .d3{
+    background-image: url('fashion-mall.avif');
+    background-size: cover;
+
+}
+.domains .d4{
+    background-image: url('mobile.webp');
+    background-size: cover;
+
+}
+.domains .d5{
+    background-image: url('restaurant.jpg');
+    background-size: cover;
+
+}
+.domains .d6{
+    background-image: url('medical.jpg');
+    background-size: cover;
+
+}
+.domains .d7{
+    background-image: url('elecronics.avif');
+    background-size: cover;
+
+}
+.domains .d8{
+    background-image: url('supermarkets.jpg');
+    background-size: cover;
+
+}
+
+
+.details{
+    height: 500px;
+    width: 100%;
+    background-color: rgb(38, 38, 42);
+    /* padding-left: 200px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.details .detail{
+    height: 350px;
+    width: 200px;
+    margin: 25px;
+    color: white;
+    
+}
+.details .d1{
+    display: flex;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 120px;
+}
+.details .d3 .d3-sub{
+    width: 100%;
+    height: 50%;
+}
+

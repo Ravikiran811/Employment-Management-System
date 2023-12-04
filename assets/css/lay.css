@@ -1,0 +1,140 @@
+body{
+background-color: grey;  
+  padding: 0px;
+    margin: 0px;
+    min-height: 700px;
+    /* position: relative; */
+}
+.header{
+    height: 150px;
+    width: 100%;
+    background-color: rgb(28, 29, 28);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header h1{
+    margin-right: 500px;
+    
+}
+.header div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+.header div i{
+    margin-right: 10px;
+}
+.section{
+    height: auto;
+    width: 95%;
+    margin: 2%;
+    display: inline-block;
+    /* border: 10px solid white; */
+    
+    /* display: flex; */
+    
+}
+
+.section .box{
+    height: 300px;
+    width: 95%;
+    border: 10px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 1%; */
+    background-color: rgb(200, 185, 185) ;
+    margin: 10px;
+}
+.box1 .box1-img{
+    height: 85%;
+    width: 30%;
+    margin-right: 30px;
+    border: 5px solid black;
+} 
+.box1 .box1-content{
+    height: 85%;
+    width: 60%;
+    border: 5px solid black;
+    text-align: center;
+    /* padding-left: 100px; */
+    display: flex;
+    border-radius: 5px;
+} 
+.box .image{
+    border-radius: 5px;
+}
+.box .sp{
+    height: 25px !important;
+    width: 40px;
+    background-color: green;
+    border: 2px solid black;
+    display: inline-block;
+    text-align: center;
+    /* padding-top: 5px; */
+    border-radius: 10px;
+}
+.box a{
+    border: 2px solid black;
+    display: inline-block;
+    width: 120px;
+    height: 30px;
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    background-color: green;
+    border-radius: 3px;
+    text-align: center;
+    padding: 5px;
+
+}
+
+.box1-content .content1{
+    /* border: 2px solid black; */
+    margin-left: 70px;
+}
+.box1-content .content2{
+    /* border: 2px solid black; */
+    padding-top: 30px;
+    height: 100%;
+    width: 270px;
+    /* margin-left: 100px; */
+}
+.box1-content .content3 i{
+margin-left: 190px;
+margin-top: 50px;
+}
+
+footer{
+    height: 200px;
+    width: 100%;
+    background-color: rgb(28, 29, 28);
+    /* position: absolute; */
+    bottom: 0px;
+}
+.add-new{
+    height: 100px;
+    width: 60%;
+    background-color: rgb(74, 108, 74);
+    font-size: 40px;
+    margin: 5%;   
+    margin-left: 20%; 
+}
+.add-new a{
+    text-decoration: none;
+    width: 100%; 
+    /* background-color:;  */
+    height: 100%; 
+    border: 10px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: green;
+    border-radius: 10px;
+    font-size: 30px;
+    
+}

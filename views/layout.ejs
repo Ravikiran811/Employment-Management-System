@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/lay.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    </head>
+    <body>
+        
+        <header class="header">
+            <div><i class="fa-solid fa-briefcase fa-2xl"></i>   <h1>Find Your Favourite Jobs</h1></div>
+            <div><i class="fa-solid fa-magnifying-glass fa-sm"></i> Search</div>
+            <div><i class="fa-solid fa-circle-info"></i>help</div>
+            <div><i class="fa-solid fa-location-dot"></i>location</div>
+            <div><a href="/destroySession" style="text-decoration: none; color: white;"><i class="fa-solid fa-right-from-bracket"></i>Sign out</a></div>
+        </header>
+        <%for(let k of detailsList){%>
+        <!-- <section class="main-sec"> -->
+            
+        <section class="section">
+            <div class="box1 box">
+                
+                 <div class="box1-img image">
+                    <img src="/uploads/<%= k.avatar %>" alt="/uploads/<%=k.avatar%>" style="width: 100%; height: 100%;">
+                 </div>
+                 <div class="box1-content">
+                    <div class="content1">
+                    <h1 style="text-decoration: underline;"><%=k.shop%></h1>  
+                    <span class="sp">4.5</span>
+                    <i class="fa-solid fa-star fa-lg"></i>
+                    <i class="fa-solid fa-star fa-lg"></i>
+                    <i class="fa-solid fa-star fa-lg"></i>
+                    <i class="fa-solid fa-star fa-lg"></i>
+                    <i class="fa-regular fa-star fa-lg"></i>
+                    <p>243 ratings....</p>
+                    <i class="fa-solid fa-location-dot fa-xl"></i>
+                    <span><%=k.adress%>.........</span><br><br>
+                    <a href="/application/?id=<%=k._id%>&id2=<%=k.domain%>"> <i class="fa-solid fa-phone fa-lg" ></i>&nbsp;Apply</a><br>
+                    </div>
+                    <div class="content2">
+                        <p><b>Salary :- <%=k.salary%></b><BR><br>Working Hours :-<%=k.hours%><BR></p>
+                        <P><B>Gender :- <%=k.gender%></B></P>
+                        <p>EverY Sunday is Holiday</p>
+                        <p><b>Age: <%=k.age%></b></p>
+                        
+                    </div>
+                    <div id="heart" class="heart content3">
+                    <i class="fa-regular fa-heart fa-2xl" ></i>
+                    </div>
+                    
+                 </div>
+                 
+                 
+            </div>
+            
+            
+
+        </section>
+        <%}%>
+        <div class="add-new box" style="height: 100px;">
+            <a href="/users/details" >
+            <i class="fa-solid fa-plus fa-2xl"></i> &nbsp;&nbsp;<b>Add Your shop</b>
+            </a>
+        </div>
+        <footer></footer>
+        
+        <script>
+            // Use querySelectorAll to select all elements with class 'heart'
+            const hearts = document.querySelectorAll('.heart');
+          
+            hearts.forEach(heart => {
+              heart.addEventListener('click', function() {
+                // Create a new i element with the solid heart class
+                const solidHeartIcon = document.createElement('i');
+                solidHeartIcon.classList.add('fa-solid', 'fa-heart', 'fa-2xl');
+          
+                // Replace the existing content with the solid heart icon
+                heart.innerHTML = '';
+                heart.appendChild(solidHeartIcon);
+              });
+            });
+          </script>
+    </body>
+</html>
+
+

@@ -1,0 +1,81 @@
+<!-- <html>
+    <head>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <div class="">
+            <form action="/checkrequests" method="post">
+                <input type="text" name="email" placeholder="email">
+                <input type="text" name="password" placeholder="password">
+                <input type="text" name="domain" placeholder="Domain">
+                <input type="submit" value="submit">
+            </form>
+        </div>
+    </body>
+</html> -->
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <style>
+            body{
+                background-color: rgb(240, 240, 199);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .container{
+                height: 500px;
+                width: 400px;
+                border: 2px solid black;
+                background-color: white;
+               border-radius: 5px;
+            }
+            .container form{
+                margin-top: 40px;
+                margin-left: 35px;
+            }
+            .container input{
+                height: 45px;
+                width: 300px;
+                margin: 15px;
+                
+                border-radius: 5px;
+            }
+            form a{
+                text-decoration: none;
+                color: rgb(42, 42, 120);
+            
+            }
+            .container .heading{
+                margin-top: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="heading">
+                <i class="fa-solid fa-user fa-2xl"></i>
+                <h1 style="text-align: center; width: 320px;">Enter Details to Open  Applications Requests</h1>
+            </div>
+            <form action="/checkrequests" method="post">
+                <input type="text" name="email"  placeholder="Username or Email"><br>
+                <input type="text" name="password" placeholder="Password"><br>
+                <select id="domain" name="domain" style="border: 2px solid black; width:300px; height: 45px;border-radius: 5px;  margin: 15px;">
+                    <option value="Restaurants">Restaurants</option>
+                    <option value="Footwear">Footwear</option>
+                    <option value="Fashion Mall">Fashion Mall</option>
+                    <option value="Mobile Stores">Mobile Stores</option>
+                    <option value="Medical">Medical</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Super Market">Super Market</option>
+                  </select>
+                <input type="submit" value="submit"><br>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Like Button</title>
+    <style>
+        /* Optional: Add some basic styling */
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        button {
+            font-size: 16px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="likeButton">Like</button>
+
+    <script>
+        // JavaScript to handle the button click
+        const ele = document.getElementById('likeButton');
+        const fin=true;
+        ele.addEventListener('click', function() {
+            if(fin){
+                ele.style.backgroundColor = 'red';
+            }
+            fin =false;
+            // You can add more functionality here, like updating a counter or sending a request to a server.
+        });
+        ele.addEventListener('click', function() {
+            
+            if(!fin){
+                ele.style.backgroundColor = 'blue';
+            }
+            fin =true;
+            // You can add more functionality here, like updating a counter or sending a request to a server.
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <style>
+            body{
+                background-color: beige;
+                margin: 0%;
+                padding: 0%;
+            }
+            header{
+                background-color: black;
+                height: 150px;
+                width: 100%;
+                color: White;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .con{
+                height: 600px;
+                width: 600px;
+                background-color: white;
+                border: 10px solid black;
+                margin-left: 30%;
+                margin-top: 25px;
+                border-radius: 5px;
+                display: flex;
+            }
+            .con form input{
+                border: 2px solid black;
+                width: 250px;
+                height: 30px;
+                border-radius: 3px;
+                font-size: 18px;
+            }
+            .con form>div{
+                /* border: 2px solid black; */
+                width: 270px;
+                /* margin: 5px; */
+                height: 50px;
+                margin-bottom: 2px;
+            }
+            form{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <i class="fa-solid fa-circle-info fa-2xl" style="margin-right: 20px;"></i>
+            <h1>Personal Information Form</h1>
+        </header>
+        <div class="con">
+            <form action="/print" method="post">
+                <div>
+                    <label for="name">Name:</label><br>
+                    <input type="text" name="name" id="name" placeholder="Name">
+                </div>
+                <div>
+                    <label for="email">Email or UserName</label><br>
+                    <input type="text" name="email" id="email" placeholder="Email or UserName">
+                </div>
+                <div>
+                    <label for="phone">Phone</label><br>
+                    <input type="text" name="phone" id="phone" placeholder="Phone">
+                </div>
+                <div>
+                    <label for="password">Password</label><br>
+                    <input type="text" id="password" name="password" placeholder="password">
+                </div>
+                <div>
+                    <label for="gender">Gender</label><br>
+                    <input type="text" id="gender" name="gender" placeholder="gender">
+                </div>
+                <div>
+                    <label for="age">Age</label><br>
+                    <input type="text" name="age" id="age" placeholder="Age">
+                </div>
+                <div>
+                    <label for="ime">IME Number</label>
+                    <input type="text" name="ime" value="<%= value %>" readonly>
+                </div>
+                <div>
+                    <label for="domain">Domain</label>
+                    <input type="text" name="domain" value="<%= value2 %>" readonly>
+                </div>
+                    <textarea name="adress" id="adress" cols="73" rows="5" placeholder="Adress" style="border: 2px solid black; border-radius: 3px;"></textarea>
+                <input type="submit" value="Submit" style="background-color: gray;">
+            </form>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-color: azure;
+            }
+            .req{
+                text-align: center;
+                margin-top: 20px;
+                text-decoration: underline;
+            }
+            .con{
+                height: auto;
+                width: 1000px;
+                border: 5px solid black;
+                min-height: 600px;
+                margin-top: 100px;
+                margin-left: 16%;
+                border-radius: 5px;
+                background-color: white;
+                
+            }
+            .request{
+                background-color: azure;
+                height: 200px;
+                width: 800px;
+                border: 2px solid black;
+                margin:35px;
+                border-radius: 5px;
+                display: flex;
+            }
+            .request h3{
+                margin: 10px;
+            }
+            .request .content1{
+                margin-left: 30px;
+            }
+            .request .content2{
+                width: 350px;
+                margin-left: 150px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                justify-content: space-around;
+               
+            }
+            .request .content2 a{
+                text-decoration: none;
+                color: black;
+                font-size: 25px;
+                border: 2px solid black;
+                display: inline-block;
+                width: 150px;
+                height: 40px;
+                border-radius: 5px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div class="con">
+            <h1 class="req">Application Requests From Workers</h1>
+            <%for(let k of applicationList){%>
+                <div class="request">
+                    <div class="content1">
+                    <h3><b style="text-decoration: underline;">Name </b>: <%=k.name%></h3>
+                    <h3><b style="text-decoration: underline;">Phone </b>: <%=k.phone%></h3>
+                    <h3><b style="text-decoration: underline;">Age </b>: <%=k.age%></h3>
+                    <h3><b style="text-decoration: underline;">Email </b>: <%=k.email%></h3>
+                    <h3><b style="text-decoration: underline;">Adress </b>: <%=k.ime%></h3>
+                    </div>
+                    <div class="content2">
+                        <a href="/createCustmor/?id=<%=k.ime%>&value=Accepted&col=green&email=<%=k.email%>" style="background-color: green;">Accept</a>
+                        <a href="/createCustmor/?id=<%=k.ime%>&value=Rejected&col=red&email=<%=k.email%>" style="background-color: red;">Reject</a>
+                    </div>
+                </div>
+            <%}%>
+        </div>
+        
+    </body>
+</html>
