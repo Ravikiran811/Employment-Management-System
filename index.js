@@ -52,7 +52,8 @@ app.use(session({
     } ,store: MongoStore.create(
         {
         //   mongoUrl: 'mongodb://127.0.0.1:27017/insta_talk',
-        mongoUrl :'mongodb://127.0.0.1/work_management',
+        // mongoUrl :'mongodb://127.0.0.1/work_management',
+            mongoUrl:'mongodb+srv://21pa1a05d9:QuPLUjT2mTPXf6qv@cluster0.awa9dub.mongodb.net/',
         mongooseConnection: db,
 
      },
