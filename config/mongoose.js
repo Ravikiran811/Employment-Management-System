@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://127.0.0.1/work_management');
+mongoose.connect('mongodb+srv://pitchukularavikiran:qSvpk3wYCN47coC9@cluster0.3ged0oj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
+
 
 const db = mongoose.connection;
 
